@@ -1,10 +1,10 @@
 @font-face {
-  font-family: "title";
+  font-family: 'title';
   src: url(./fonts/Montserrat-Bold.ttf);
 }
 
 @font-face {
-  font-family: "regular";
+  font-family: 'regular';
   src: url(./fonts/Montserrat-Regular.ttf);
 }
 
@@ -19,7 +19,7 @@ body {
 
 h1 {
   text-align: center;
-  font-family: "title";
+  font-family: 'title';
 }
 
 #task-form {
@@ -34,7 +34,7 @@ h1 {
   padding: 5px 10px;
   width: 60%;
   margin-right: 10px;
-  font-family: "regular";
+  font-family: 'regular';
   text-align: center;
 }
 
@@ -42,8 +42,38 @@ h1 {
   border: none;
   background-color: blue;
   color: white;
-  font-family: "title";
+  font-family: 'title';
   padding: 5px 10px;
   border-radius: 5px;
   cursor: pointer;
+}
+
+#task-list-area {
+  padding-left: 10%;
+}
+
+#task-list {
+  font-family: 'regular';
+}
+
+@media screen and (max-width: 768px) {
+  #container {
+    width: 90%;
+    margin: 10px auto;
+  }
+
+  h1 {
+    font-size: 130%;
+  }
+
+  #task-description {
+    display: block;
+    width: 90%;
+    margin: 5px auto;
+  }
+
+  #task-list {
+    padding-left: 0;
+    font-size: 80%;
+  }
 }
